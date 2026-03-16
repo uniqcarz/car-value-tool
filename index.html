@@ -1,4 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Used Car Price Calculator</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:360px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin-top:12px;
+font-size:16px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#2e7d32;
+color:white;
+border:none;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+#result{
+margin-top:20px;
+font-size:18px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Check Used Car Price</h2>
+
+<select id="brand" onchange="populateModels()">
+<option value="">Select Brand</option>
+<option>Maruti Suzuki</option>
+<option>Hyundai</option>
+<option>Tata</option>
+<option>Mahindra</option>
+<option>Toyota</option>
+<option>Kia</option>
+<option>Honda</option>
+<option>Renault</option>
+<option>Nissan</option>
+</select>
+
+<select id="model">
+<option value="">Select Model</option>
+</select>
+
+<input type="number" id="year" placeholder="Manufacturing Year">
+
+<input type="number" id="kms" placeholder="Kilometers Driven">
+
+<button onclick="calculateValue()">Check Price</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
 let carDatabase = [];
+
+
+/* LOAD CSV */
 
 async function loadCarData(){
 
@@ -31,34 +128,37 @@ console.log("Cars loaded:", carDatabase.length);
 
 window.onload = loadCarData;
 
+
+/* POPULATE MODELS */
+
 function populateModels(){
 
-if(carDatabase.length === 0){
-console.log("Database not loaded yet");
-return;
-}
-
 let brand = document.getElementById("brand").value.toLowerCase();
-let modelDropdown = document.getElementById("model");
+let dropdown = document.getElementById("model");
 
-modelDropdown.innerHTML = "<option value=''>Select Model</option>";
+dropdown.innerHTML = "<option value=''>Select Model</option>";
 
-let filteredCars = carDatabase.filter(car =>
+let models = carDatabase.filter(car =>
 car.brand.includes(brand)
 );
 
-filteredCars.forEach(car => {
+let unique = [...new Set(models.map(car => car.model))];
+
+unique.forEach(model => {
 
 let option = document.createElement("option");
 
-option.value = car.model;
-option.text = car.model;
+option.value = model;
+option.text = model;
 
-modelDropdown.appendChild(option);
+dropdown.appendChild(option);
 
 });
 
 }
+
+
+/* DEPRECIATION CURVE */
 
 function calculateDepreciatedValue(basePrice, age){
 
@@ -78,6 +178,9 @@ else value *= 0.95;
 return value;
 
 }
+
+
+/* CALCULATOR */
 
 function calculateValue(){
 
@@ -103,13 +206,25 @@ let age = new Date().getFullYear() - year;
 
 let value = calculateDepreciatedValue(car.basePrice, age);
 
-/* SUV demand adjustment */
 
-if(car.segment.includes("suv") || car.segment.includes("utility")){
-value = value * 1.08;
-}
+/* BRAND FACTOR */
 
-/* KM adjustment */
+let brandFactor = 1;
+
+if(car.brand.includes("maruti")) brandFactor = 1.07;
+else if(car.brand.includes("toyota")) brandFactor = 1.07;
+else if(car.brand.includes("hyundai")) brandFactor = 1.05;
+
+value *= brandFactor;
+
+
+/* SUV DEMAND */
+
+if(car.segment.includes("suv"))
+value *= 1.08;
+
+
+/* KM ADJUSTMENT */
 
 if(km < 20000) value *= 1.05;
 else if(km < 40000) value *= 1.02;
@@ -117,7 +232,8 @@ else if(km < 70000) value *= 1;
 else if(km < 100000) value *= 0.95;
 else value *= 0.90;
 
-/* price range */
+
+/* PRICE RANGE */
 
 let minPrice = Math.round(value * 0.95);
 let maxPrice = Math.round(value * 1.05);
@@ -126,3 +242,9 @@ document.getElementById("result").innerHTML =
 "Estimated Used Car Price Range: ₹" + minPrice + " – ₹" + maxPrice;
 
 }
+
+</script>
+
+</body>
+
+</html>
