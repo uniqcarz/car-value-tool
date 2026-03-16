@@ -12,11 +12,11 @@ rows.forEach(row => {
 const cols = row.split(",");
 
 carDatabase.push({
-brand: cols[0].toLowerCase(),
-model: cols[1].toLowerCase(),
+brand: cols[0].trim().toLowerCase(),
+model: cols[1].trim().toLowerCase(),
+segment: cols[2].trim(), 
 basePrice: parseInt(cols[4]),
 depreciation: parseFloat(cols[5])
-if(car.segment.includes("SUV")) value *= 1.08;
 });
 
 });
@@ -24,6 +24,7 @@ if(car.segment.includes("SUV")) value *= 1.08;
 }
 
 loadCarData();
+
 
 function calculateValue(){
 
@@ -49,7 +50,12 @@ let age = new Date().getFullYear() - year;
 
 let value = car.basePrice * Math.pow((1 - car.depreciation), age);
 
-if(car.segment.includes("SUV")) value *= 1.08;
+
+/* SUV demand adjustment */
+
+if(car.segment.toLowerCase().includes("suv"))
+value *= 1.08;
+
 
 /* km adjustment */
 
@@ -59,8 +65,10 @@ else if(km < 70000) value *= 1;
 else if(km < 100000) value *= 0.95;
 else value *= 0.90;
 
+
 let minPrice = Math.round(value * 0.95);
 let maxPrice = Math.round(value * 1.05);
+
 
 document.getElementById("result").innerHTML =
 "Estimated Used Car Price Range: ₹" + minPrice + " – ₹" + maxPrice;
