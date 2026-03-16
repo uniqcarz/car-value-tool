@@ -1,17 +1,35 @@
 [
   {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
+    "brand": "Maruti Suzuki",
+    "model": "Alto Base",
+    "onroad": 550000,
+    "bodyfactor": 1.0,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
+    "brand": "Maruti Suzuki",
+    "model": "Alto Mid",
+    "onroad": 594000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Alto Top",
+    "onroad": 638000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Alto Auto",
+    "onroad": 682000,
     "bodyfactor": 1.0,
     "fuelfactor": 1.0,
     "transfactor": 1.04,
@@ -19,7 +37,151 @@
   },
   {
     "brand": "Maruti Suzuki",
-    "model": "Swift",
+    "model": "Alto K10 Base",
+    "onroad": 600000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Alto K10 Mid",
+    "onroad": 648000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Alto K10 Top",
+    "onroad": 696000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Alto K10 Auto",
+    "onroad": 744000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "S-Presso Base",
+    "onroad": 600000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "S-Presso Mid",
+    "onroad": 648000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "S-Presso Top",
+    "onroad": 696000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "S-Presso Auto",
+    "onroad": 744000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "WagonR Base",
+    "onroad": 700000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "WagonR Mid",
+    "onroad": 756000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "WagonR Top",
+    "onroad": 812000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "WagonR Auto",
+    "onroad": 868000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Celerio Base",
+    "onroad": 700000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Celerio Mid",
+    "onroad": 756000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Celerio Top",
+    "onroad": 812000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Celerio Auto",
+    "onroad": 868000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Swift Base",
     "onroad": 900000,
     "bodyfactor": 1.0,
     "fuelfactor": 1.0,
@@ -28,8 +190,890 @@
   },
   {
     "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
+    "model": "Swift Mid",
+    "onroad": 972000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Swift Top",
+    "onroad": 1043999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Swift Auto",
+    "onroad": 1116000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Baleno Base",
+    "onroad": 1050000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Baleno Mid",
+    "onroad": 1134000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Baleno Top",
+    "onroad": 1218000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Baleno Auto",
+    "onroad": 1302000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Dzire Base",
+    "onroad": 950000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Dzire Mid",
+    "onroad": 1026000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Dzire Top",
+    "onroad": 1102000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Dzire Auto",
+    "onroad": 1178000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ignis Base",
+    "onroad": 750000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ignis Mid",
+    "onroad": 810000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ignis Top",
+    "onroad": 869999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ignis Auto",
+    "onroad": 930000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Fronx Base",
+    "onroad": 1100000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Fronx Mid",
+    "onroad": 1188000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Fronx Top",
+    "onroad": 1276000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Fronx Auto",
+    "onroad": 1364000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Brezza Base",
+    "onroad": 1300000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Brezza Mid",
+    "onroad": 1404000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Brezza Top",
+    "onroad": 1508000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Brezza Auto",
+    "onroad": 1612000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Grand Vitara Base",
+    "onroad": 1800000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Grand Vitara Mid",
+    "onroad": 1944000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Grand Vitara Top",
+    "onroad": 2087999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Grand Vitara Auto",
+    "onroad": 2232000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ertiga Base",
+    "onroad": 1400000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ertiga Mid",
+    "onroad": 1512000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ertiga Top",
+    "onroad": 1624000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ertiga Auto",
+    "onroad": 1736000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "XL6 Base",
+    "onroad": 1600000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "XL6 Mid",
+    "onroad": 1728000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "XL6 Top",
+    "onroad": 1855999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "XL6 Auto",
+    "onroad": 1984000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ciaz Base",
+    "onroad": 1300000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ciaz Mid",
+    "onroad": 1404000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ciaz Top",
+    "onroad": 1508000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ciaz Auto",
+    "onroad": 1612000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santro Base",
+    "onroad": 650000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santro Mid",
+    "onroad": 702000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santro Top",
+    "onroad": 754000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santro Auto",
+    "onroad": 806000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Grand i10 Base",
+    "onroad": 750000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Grand i10 Mid",
+    "onroad": 810000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Grand i10 Top",
+    "onroad": 869999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Grand i10 Auto",
+    "onroad": 930000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i10 Nios Base",
+    "onroad": 800000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i10 Nios Mid",
+    "onroad": 864000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i10 Nios Top",
+    "onroad": 927999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i10 Nios Auto",
+    "onroad": 992000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i20 Base",
+    "onroad": 1100000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i20 Mid",
+    "onroad": 1188000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i20 Top",
+    "onroad": 1276000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i20 Auto",
+    "onroad": 1364000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Aura Base",
+    "onroad": 900000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Aura Mid",
+    "onroad": 972000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Aura Top",
+    "onroad": 1043999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Aura Auto",
+    "onroad": 1116000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Verna Base",
+    "onroad": 1600000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Verna Mid",
+    "onroad": 1728000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Verna Top",
+    "onroad": 1855999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Verna Auto",
+    "onroad": 1984000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Exter Base",
+    "onroad": 850000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Exter Mid",
+    "onroad": 918000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Exter Top",
+    "onroad": 985999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Exter Auto",
+    "onroad": 1054000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Venue Base",
+    "onroad": 1200000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Venue Mid",
+    "onroad": 1296000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Venue Top",
+    "onroad": 1392000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Venue Auto",
+    "onroad": 1488000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Creta Base",
+    "onroad": 1600000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Creta Mid",
+    "onroad": 1728000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Creta Top",
+    "onroad": 1855999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Creta Auto",
+    "onroad": 1984000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Alcazar Base",
+    "onroad": 2000000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Alcazar Mid",
+    "onroad": 2160000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Alcazar Top",
+    "onroad": 2320000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Alcazar Auto",
+    "onroad": 2480000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson Base",
+    "onroad": 3200000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson Mid",
+    "onroad": 3456000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson Top",
+    "onroad": 3711999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson Auto",
+    "onroad": 3968000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tiago Base",
+    "onroad": 700000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tiago Mid",
+    "onroad": 756000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tiago Top",
+    "onroad": 812000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tiago Auto",
+    "onroad": 868000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tigor Base",
+    "onroad": 850000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tigor Mid",
+    "onroad": 918000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tigor Top",
+    "onroad": 985999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Tigor Auto",
+    "onroad": 1054000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Altroz Base",
+    "onroad": 950000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Altroz Mid",
+    "onroad": 1026000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Altroz Top",
+    "onroad": 1102000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Altroz Auto",
+    "onroad": 1178000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Punch Base",
+    "onroad": 820000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Punch Mid",
+    "onroad": 885600,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Punch Top",
+    "onroad": 951199,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Punch Auto",
+    "onroad": 1016800,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
     "transfactor": 1.04,
@@ -37,8 +1081,8 @@
   },
   {
     "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
+    "model": "Nexon Base",
+    "onroad": 1300000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
@@ -46,52 +1090,646 @@
   },
   {
     "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
+    "model": "Nexon Mid",
+    "onroad": 1404000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Nexon Top",
+    "onroad": 1508000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Nexon Auto",
+    "onroad": 1612000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Harrier Base",
+    "onroad": 2200000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Harrier Mid",
+    "onroad": 2376000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Harrier Top",
+    "onroad": 2552000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Harrier Auto",
+    "onroad": 2728000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Safari Base",
+    "onroad": 2400000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Safari Mid",
+    "onroad": 2592000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Safari Top",
+    "onroad": 2784000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Tata",
+    "model": "Safari Auto",
+    "onroad": 2976000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero Base",
+    "onroad": 1100000,
+    "bodyfactor": 1.0,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Mahindra",
-    "model": "XUV300",
+    "model": "Bolero Mid",
+    "onroad": 1188000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero Top",
+    "onroad": 1276000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero Auto",
+    "onroad": 1364000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero Neo Base",
+    "onroad": 1200000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero Neo Mid",
+    "onroad": 1296000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero Neo Top",
+    "onroad": 1392000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero Neo Auto",
+    "onroad": 1488000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV300 Base",
     "onroad": 1500000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV300 Mid",
+    "onroad": 1620000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV300 Top",
+    "onroad": 1739999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV300 Auto",
+    "onroad": 1860000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
     "brand": "Mahindra",
-    "model": "Scorpio N",
+    "model": "XUV400 Base",
+    "onroad": 1800000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV400 Mid",
+    "onroad": 1944000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV400 Top",
+    "onroad": 2087999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV400 Auto",
+    "onroad": 2232000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio Base",
+    "onroad": 1600000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio Mid",
+    "onroad": 1728000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio Top",
+    "onroad": 1855999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio Auto",
+    "onroad": 1984000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio N Base",
     "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio N Mid",
+    "onroad": 2808000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio N Top",
+    "onroad": 3016000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio N Auto",
+    "onroad": 3224000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Thar Base",
+    "onroad": 1800000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Thar Mid",
+    "onroad": 1944000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Thar Top",
+    "onroad": 2087999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Thar Auto",
+    "onroad": 2232000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV700 Base",
+    "onroad": 2500000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV700 Mid",
+    "onroad": 2700000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV700 Top",
+    "onroad": 2900000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV700 Auto",
+    "onroad": 3100000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
     "brand": "Toyota",
-    "model": "Glanza",
+    "model": "Glanza Base",
     "onroad": 1030000,
     "bodyfactor": 1.0,
     "fuelfactor": 1.0,
-    "transfactor": 1.02,
+    "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Toyota",
-    "model": "Hyryder",
+    "model": "Glanza Mid",
+    "onroad": 1112400,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Glanza Top",
+    "onroad": 1194800,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Glanza Auto",
+    "onroad": 1277200,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Urban Cruiser Base",
+    "onroad": 1200000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Urban Cruiser Mid",
+    "onroad": 1296000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Urban Cruiser Top",
+    "onroad": 1392000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Urban Cruiser Auto",
+    "onroad": 1488000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hyryder Base",
     "onroad": 1950000,
     "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hyryder Mid",
+    "onroad": 2106000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hyryder Top",
+    "onroad": 2262000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hyryder Auto",
+    "onroad": 2418000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Crysta Base",
+    "onroad": 2600000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Crysta Mid",
+    "onroad": 2808000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Crysta Top",
+    "onroad": 3016000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Crysta Auto",
+    "onroad": 3224000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Hycross Base",
+    "onroad": 3000000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Hycross Mid",
+    "onroad": 3240000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Hycross Top",
+    "onroad": 3479999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova Hycross Auto",
+    "onroad": 3720000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner Base",
+    "onroad": 4200000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner Mid",
+    "onroad": 4536000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner Top",
+    "onroad": 4872000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner Auto",
+    "onroad": 5208000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
     "brand": "Kia",
-    "model": "Seltos",
+    "model": "Sonet Base",
+    "onroad": 1200000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Sonet Mid",
+    "onroad": 1296000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Sonet Top",
+    "onroad": 1392000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Sonet Auto",
+    "onroad": 1488000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Seltos Base",
     "onroad": 1750000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
@@ -100,1294 +1738,430 @@
   },
   {
     "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
+    "model": "Seltos Mid",
+    "onroad": 1890000,
     "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Seltos Top",
+    "onroad": 2029999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Seltos Auto",
+    "onroad": 2170000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Carens Base",
+    "onroad": 1700000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Carens Mid",
+    "onroad": 1836000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Carens Top",
+    "onroad": 1971999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Kia",
+    "model": "Carens Auto",
+    "onroad": 2108000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
     "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
+    "model": "Amaze Base",
     "onroad": 1040000,
-    "bodyfactor": 1.03,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "Amaze Mid",
+    "onroad": 1123200,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "Amaze Top",
+    "onroad": 1206400,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "Amaze Auto",
+    "onroad": 1289600,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "City Base",
+    "onroad": 1800000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "City Mid",
+    "onroad": 1944000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "City Top",
+    "onroad": 2087999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "City Auto",
+    "onroad": 2232000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "Elevate Base",
+    "onroad": 1700000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "Elevate Mid",
+    "onroad": 1836000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "Elevate Top",
+    "onroad": 1971999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Honda",
+    "model": "Elevate Auto",
+    "onroad": 2108000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Renault",
+    "model": "Kwid Base",
+    "onroad": 600000,
+    "bodyfactor": 1.0,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
+    "model": "Kwid Mid",
+    "onroad": 648000,
     "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
+    "model": "Kwid Top",
+    "onroad": 696000,
     "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
+    "model": "Kwid Auto",
+    "onroad": 744000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Renault",
+    "model": "Kiger Base",
     "onroad": 1150000,
     "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
+    "model": "Kiger Mid",
+    "onroad": 1242000,
     "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
+    "model": "Kiger Top",
+    "onroad": 1334000,
     "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
+    "model": "Kiger Auto",
+    "onroad": 1426000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
+    "brand": "Renault",
+    "model": "Triber Base",
     "onroad": 900000,
     "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
+    "model": "Triber Mid",
+    "onroad": 972000,
     "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
+    "model": "Triber Top",
+    "onroad": 1043999,
     "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
     "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
+    "model": "Triber Auto",
+    "onroad": 1116000,
+    "bodyfactor": 1.0,
     "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
     "brand": "Nissan",
-    "model": "Magnite",
+    "model": "Magnite Base",
     "onroad": 1100000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
-    "transfactor": 1.05,
+    "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
+    "brand": "Nissan",
+    "model": "Magnite Mid",
+    "onroad": 1188000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
+    "brand": "Nissan",
+    "model": "Magnite Top",
+    "onroad": 1276000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Nissan",
+    "model": "Magnite Auto",
+    "onroad": 1364000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Skoda",
+    "model": "Slavia Base",
+    "onroad": 1700000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Skoda",
+    "model": "Slavia Mid",
+    "onroad": 1836000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Skoda",
+    "model": "Slavia Top",
+    "onroad": 1971999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Skoda",
+    "model": "Slavia Auto",
+    "onroad": 2108000,
     "bodyfactor": 1.0,
     "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
+    "brand": "Skoda",
+    "model": "Kushaq Base",
+    "onroad": 1800000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Skoda",
+    "model": "Kushaq Mid",
+    "onroad": 1944000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Skoda",
+    "model": "Kushaq Top",
+    "onroad": 2087999,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Skoda",
+    "model": "Kushaq Auto",
+    "onroad": 2232000,
+    "bodyfactor": 1.08,
+    "fuelfactor": 1.0,
+    "transfactor": 1.04,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Virtus Base",
+    "onroad": 1800000,
     "bodyfactor": 1.0,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
+    "brand": "Volkswagen",
+    "model": "Virtus Mid",
+    "onroad": 1944000,
     "bodyfactor": 1.0,
     "fuelfactor": 1.0,
-    "transfactor": 1.02,
+    "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
+    "brand": "Volkswagen",
+    "model": "Virtus Top",
+    "onroad": 2087999,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
+    "transfactor": 1.0,
+    "ownerfactor": 1.0
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Virtus Auto",
+    "onroad": 2232000,
+    "bodyfactor": 1.0,
+    "fuelfactor": 1.0,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Kia",
-    "model": "Seltos",
+    "brand": "Volkswagen",
+    "model": "Taigun Base",
     "onroad": 1750000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
@@ -1395,1307 +2169,29 @@
     "ownerfactor": 1.0
   },
   {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
+    "brand": "Volkswagen",
+    "model": "Taigun Mid",
+    "onroad": 1890000,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
+    "brand": "Volkswagen",
+    "model": "Taigun Top",
+    "onroad": 2029999,
     "bodyfactor": 1.08,
     "fuelfactor": 1.0,
     "transfactor": 1.0,
     "ownerfactor": 1.0
   },
   {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
+    "brand": "Volkswagen",
+    "model": "Taigun Auto",
+    "onroad": 2170000,
     "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
     "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "City",
-    "onroad": 2250000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Honda",
-    "model": "Amaze",
-    "onroad": 1040000,
-    "bodyfactor": 1.03,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Renault",
-    "model": "Kiger",
-    "onroad": 1150000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Nissan",
-    "model": "Magnite",
-    "onroad": 1100000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.05,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "Creta",
-    "onroad": 1600000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Hyundai",
-    "model": "i20",
-    "onroad": 1100000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Swift",
-    "onroad": 900000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Maruti Suzuki",
-    "model": "Brezza",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Nexon",
-    "onroad": 1320000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Tata",
-    "model": "Punch",
-    "onroad": 820000,
-    "bodyfactor": 1.06,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "XUV300",
-    "onroad": 1500000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Mahindra",
-    "model": "Scorpio N",
-    "onroad": 2600000,
-    "bodyfactor": 1.1,
-    "fuelfactor": 1.05,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Glanza",
-    "onroad": 1030000,
-    "bodyfactor": 1.0,
-    "fuelfactor": 1.0,
-    "transfactor": 1.02,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Toyota",
-    "model": "Hyryder",
-    "onroad": 1950000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.08,
-    "transfactor": 1.04,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Seltos",
-    "onroad": 1750000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.0,
-    "transfactor": 1.0,
-    "ownerfactor": 1.0
-  },
-  {
-    "brand": "Kia",
-    "model": "Sonet",
-    "onroad": 1720000,
-    "bodyfactor": 1.08,
-    "fuelfactor": 1.05,
     "transfactor": 1.04,
     "ownerfactor": 1.0
   }
