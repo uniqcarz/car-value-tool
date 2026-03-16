@@ -16,6 +16,7 @@ brand: cols[0].toLowerCase(),
 model: cols[1].toLowerCase(),
 basePrice: parseInt(cols[4]),
 depreciation: parseFloat(cols[5])
+if(car.segment.includes("SUV")) value *= 1.08;
 });
 
 });
