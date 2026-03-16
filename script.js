@@ -9,11 +9,11 @@ const rows = text.split("\n");
 
 rows.forEach(row => {
 
-if(!row.trim()) return; // skip empty rows
+if(!row.trim()) return;
 
 const cols = row.split(",");
 
-if(cols.length < 6) return; // skip broken rows
+if(cols.length < 6) return;
 
 carDatabase.push({
 brand: cols[0].trim().toLowerCase(),
@@ -57,7 +57,12 @@ let value = car.basePrice * Math.pow((1 - car.depreciation), age);
 
 /* SUV demand adjustment */
 
-if(car.segment.includes("suv")){
+let segment = car.segment.toLowerCase();
+
+if(
+segment.includes("suv") ||
+segment.includes("utility")
+){
 value = value * 1.08;
 }
 
@@ -69,7 +74,7 @@ else if(km < 70000) value = value * 1;
 else if(km < 100000) value = value * 0.95;
 else value = value * 0.90;
 
-/* Price range */
+/* price range */
 
 let minPrice = Math.round(value * 0.95);
 let maxPrice = Math.round(value * 1.05);
