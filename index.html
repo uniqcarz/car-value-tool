@@ -3,13 +3,12 @@
 <html>
 
 <head>
-
 <title>Used Car Price Calculator</title>
 
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 background:#f4f4f4;
 display:flex;
 justify-content:center;
@@ -62,7 +61,7 @@ font-weight:bold;
 
 <h2>Check Used Car Price</h2>
 
-<select id="brand" onchange="populateModels()">
+<select id="brand">
 <option>Select Brand</option>
 </select>
 
@@ -123,6 +122,11 @@ dropdown.appendChild(option);
 
 });
 
+
+/* trigger model loading when brand changes */
+
+dropdown.addEventListener("change",populateModels);
+
 }
 
 
@@ -164,8 +168,11 @@ dropdown.appendChild(option);
 function calculateValue(){
 
 let brand=document.getElementById("brand").value;
+
 let model=document.getElementById("model").value;
+
 let year=document.getElementById("year").value;
+
 let km=document.getElementById("kms").value;
 
 let car=cars.find(c=>c.brand===brand && c.model===model);
@@ -183,13 +190,17 @@ let age=new Date().getFullYear()-year;
 let value=car.onroad*Math.pow(0.9,age);
 
 value*=car.bodyfactor;
+
 value*=car.fuelfactor;
+
 value*=car.transfactor;
+
 value*=car.ownerfactor;
 
 if(km>80000) value*=0.9;
 
 let min=Math.round(value*0.95);
+
 let max=Math.round(value*1.05);
 
 document.getElementById("result").innerHTML="₹"+min+" - ₹"+max;
