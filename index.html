@@ -9,19 +9,18 @@ async function loadCars(){
 try{
 
 const response = await fetch("cars.json");
-
 cars = await response.json();
 
-/* remove bad rows */
+/* remove broken rows */
 
 cars = cars.filter(c => c.brand && c.model && c.onroad);
 
 populateBrands();
 
 }
-catch(err){
+catch(error){
 
-console.log("Dataset load error",err);
+console.log("Dataset failed to load",error);
 
 }
 
@@ -34,7 +33,7 @@ window.onload = loadCars;
 
 function populateBrands(){
 
-let dropdown = document.getElementById("brand");
+let dropdown=document.getElementById("brand");
 
 dropdown.innerHTML="<option>Select Brand</option>";
 
@@ -47,7 +46,6 @@ brands.forEach(b=>{
 let option=document.createElement("option");
 
 option.value=b;
-
 option.text=b;
 
 dropdown.appendChild(option);
@@ -80,7 +78,6 @@ unique.forEach(m=>{
 let option=document.createElement("option");
 
 option.value=m;
-
 option.text=m;
 
 dropdown.appendChild(option);
@@ -90,16 +87,35 @@ dropdown.appendChild(option);
 }
 
 
-/* VALUATION ENGINE */
+/* REALISTIC DEPRECIATION CURVE */
+
+function depreciation(price,age){
+
+let value=price;
+
+for(let i=1;i<=age;i++){
+
+if(i==1) value*=0.82;
+else if(i==2) value*=0.88;
+else if(i==3) value*=0.90;
+else if(i==4) value*=0.92;
+else if(i==5) value*=0.93;
+else value*=0.95;
+
+}
+
+return value;
+
+}
+
+
+/* CALCULATOR */
 
 function calculateValue(){
 
 let brand=document.getElementById("brand").value;
-
 let model=document.getElementById("model").value;
-
 let year=document.getElementById("year").value;
-
 let km=document.getElementById("kms").value;
 
 let car=cars.find(c=>c.brand===brand && c.model===model);
@@ -107,30 +123,51 @@ let car=cars.find(c=>c.brand===brand && c.model===model);
 if(!car){
 
 document.getElementById("result").innerHTML="Car not found";
-
 return;
 
 }
 
 let age=new Date().getFullYear()-year;
 
-let value=car.onroad*Math.pow(0.9,age);
+let value=depreciation(car.onroad,age);
 
-value*=car.bodyfactor||1;
 
-value*=car.fuelfactor||1;
+/* BODY TYPE DEMAND */
 
-value*=car.transfactor||1;
+value*=car.bodyfactor || 1;
 
-value*=car.ownerfactor||1;
 
-if(km>80000) value*=0.9;
+/* FUEL DEMAND */
+
+value*=car.fuelfactor || 1;
+
+
+/* TRANSMISSION DEMAND */
+
+value*=car.transfactor || 1;
+
+
+/* OWNER FACTOR */
+
+value*=car.ownerfactor || 1;
+
+
+/* KM ADJUSTMENT */
+
+if(km<20000) value*=1.05;
+else if(km<40000) value*=1.02;
+else if(km<70000) value*=1;
+else if(km<100000) value*=0.95;
+else value*=0.90;
+
+
+/* PRICE RANGE */
 
 let min=Math.round(value*0.95);
-
 let max=Math.round(value*1.05);
 
-document.getElementById("result").innerHTML="₹"+min+" - ₹"+max;
+document.getElementById("result").innerHTML =
+"Estimated Used Car Price: ₹"+min+" – ₹"+max;
 
 }
 
