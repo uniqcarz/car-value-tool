@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-<title>Used Car Price Tool</title>
+
+<title>Used Car Price Calculator</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:380px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+h2{
+margin-top:0;
+}
+
+select,input{
+width:100%;
+padding:10px;
+margin-top:12px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#2e7d32;
+color:white;
+border:none;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#256428;
+}
+
+#result{
+margin-top:20px;
+font-size:18px;
+font-weight:bold;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h2>Car Price Calculator</h2>
+<div class="container">
+
+<h2>Check Used Car Price</h2>
 
 <select id="brand" onchange="populateModels()">
-<option value="">Select Brand</option>
-<option>Hyundai</option>
-<option>Maruti Suzuki</option>
-<option>Tata</option>
-</select>
 
-<br><br>
+<option value="">Select Brand</option>
+<option>Maruti Suzuki</option>
+<option>Hyundai</option>
+<option>Tata</option>
+<option>Mahindra</option>
+<option>Toyota</option>
+<option>Kia</option>
+<option>Honda</option>
+<option>Renault</option>
+<option>Nissan</option>
+
+</select>
 
 <select id="model">
 <option>Select Model</option>
 </select>
 
-<br><br>
+<input id="year" placeholder="Manufacturing Year">
 
-<input id="year" placeholder="Year">
-
-<br><br>
-
-<input id="kms" placeholder="KM Driven">
-
-<br><br>
+<input id="kms" placeholder="Kilometers Driven">
 
 <button onclick="calculate()">Check Price</button>
 
-<p id="result"></p>
+<div id="result"></div>
+
+</div>
 
 <script>
 
@@ -42,29 +105,34 @@ let cars=[
 
 {brand:"hyundai",model:"creta",price:1079000,segment:"suv"},
 {brand:"hyundai",model:"i20",price:699000,segment:"hatchback"},
+{brand:"hyundai",model:"venue",price:780000,segment:"suv"},
 
 {brand:"maruti suzuki",model:"wagon r",price:550000,segment:"hatchback"},
 {brand:"maruti suzuki",model:"swift",price:620000,segment:"hatchback"},
+{brand:"maruti suzuki",model:"baleno",price:720000,segment:"hatchback"},
 
-{brand:"tata",model:"nexon",price:800000,segment:"suv"}
+{brand:"tata",model:"nexon",price:800000,segment:"suv"},
+{brand:"tata",model:"punch",price:600000,segment:"suv"},
+
+{brand:"mahindra",model:"xuv300",price:850000,segment:"suv"},
+{brand:"mahindra",model:"scorpio",price:1300000,segment:"suv"}
 
 ];
 
 function populateModels(){
 
 let brand=document.getElementById("brand").value.toLowerCase();
-
 let dropdown=document.getElementById("model");
 
 dropdown.innerHTML="<option>Select Model</option>";
 
 cars.filter(c=>c.brand.includes(brand)).forEach(car=>{
 
-let opt=document.createElement("option");
-opt.value=car.model;
-opt.text=car.model;
+let option=document.createElement("option");
+option.value=car.model;
+option.text=car.model;
 
-dropdown.appendChild(opt);
+dropdown.appendChild(option);
 
 });
 
@@ -97,7 +165,7 @@ if(km>80000) value*=0.9;
 let min=Math.round(value*0.95);
 let max=Math.round(value*1.05);
 
-document.getElementById("result").innerHTML="₹"+min+" - ₹"+max;
+document.getElementById("result").innerHTML="Estimated Price: ₹"+min+" - ₹"+max;
 
 }
 
