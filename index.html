@@ -1,110 +1,42 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-<title>Used Car Price Calculator</title>
-
-<style>
-
-body{
-font-family:Arial;
-background:#f4f4f4;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-margin:0;
-}
-
-.container{
-background:white;
-padding:30px;
-border-radius:10px;
-width:380px;
-box-shadow:0 0 10px rgba(0,0,0,0.15);
-text-align:center;
-}
-
-select,input{
-width:100%;
-padding:10px;
-margin-top:12px;
-font-size:16px;
-}
-
-button{
-width:100%;
-padding:12px;
-margin-top:15px;
-background:#2e7d32;
-color:white;
-border:none;
-font-size:18px;
-border-radius:5px;
-cursor:pointer;
-}
-
-#result{
-margin-top:20px;
-font-size:18px;
-font-weight:bold;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<h2>Check Used Car Price</h2>
-
-<select id="brand">
-<option>Select Brand</option>
-</select>
-
-<select id="model">
-<option>Select Model</option>
-</select>
-
-<input id="year" placeholder="Manufacturing Year">
-
-<input id="kms" placeholder="Kilometers Driven">
-
-<button onclick="calculateValue()">Check Price</button>
-
-<div id="result"></div>
-
-</div>
-
 <script>
 
 let cars=[];
-
 
 /* LOAD DATASET */
 
 async function loadCars(){
 
-const response=await fetch("cars.json");
+try{
 
-cars=await response.json();
+const response = await fetch("cars.json");
+
+cars = await response.json();
+
+/* remove bad rows */
+
+cars = cars.filter(c => c.brand && c.model && c.onroad);
 
 populateBrands();
 
 }
+catch(err){
 
-window.onload=loadCars;
+console.log("Dataset load error",err);
 
+}
+
+}
+
+window.onload = loadCars;
 
 
 /* BRAND DROPDOWN */
 
 function populateBrands(){
 
-let dropdown=document.getElementById("brand");
+let dropdown = document.getElementById("brand");
+
+dropdown.innerHTML="<option>Select Brand</option>";
 
 let brands=[...new Set(cars.map(c=>c.brand))];
 
@@ -122,13 +54,9 @@ dropdown.appendChild(option);
 
 });
 
-
-/* trigger model loading when brand changes */
-
 dropdown.addEventListener("change",populateModels);
 
 }
-
 
 
 /* MODEL DROPDOWN */
@@ -162,7 +90,6 @@ dropdown.appendChild(option);
 }
 
 
-
 /* VALUATION ENGINE */
 
 function calculateValue(){
@@ -189,13 +116,13 @@ let age=new Date().getFullYear()-year;
 
 let value=car.onroad*Math.pow(0.9,age);
 
-value*=car.bodyfactor;
+value*=car.bodyfactor||1;
 
-value*=car.fuelfactor;
+value*=car.fuelfactor||1;
 
-value*=car.transfactor;
+value*=car.transfactor||1;
 
-value*=car.ownerfactor;
+value*=car.ownerfactor||1;
 
 if(km>80000) value*=0.9;
 
@@ -208,7 +135,3 @@ document.getElementById("result").innerHTML="₹"+min+" - ₹"+max;
 }
 
 </script>
-
-</body>
-
-</html>
