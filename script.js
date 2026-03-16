@@ -27,6 +27,8 @@ depreciation: parseFloat(cols[5])
 
 console.log("Cars loaded:", carDatabase.length);
 
+populateModels();
+
 }
 
 window.onload = loadCarData;
@@ -90,6 +92,31 @@ document.getElementById("result").innerHTML =
 return;
 
 }
+
+function populateModels(){
+
+let brand = document.getElementById("brand").value.toLowerCase();
+let modelDropdown = document.getElementById("model");
+
+modelDropdown.innerHTML = "<option value=''>Select Model</option>";
+
+let filteredCars = carDatabase.filter(car =>
+car.brand.includes(brand)
+);
+
+filteredCars.forEach(car => {
+
+let option = document.createElement("option");
+
+option.value = car.model;
+option.text = car.model;
+
+modelDropdown.appendChild(option);
+
+});
+
+}
+
 
 let age = new Date().getFullYear() - year;
 
