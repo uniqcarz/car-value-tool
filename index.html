@@ -97,4 +97,17 @@ value *= 1.08;
 /* KM adjustment */
 
 if(km < 20000) value *= 1.05;
-else if(k
+else if(km < 40000) value *= 1.02;
+else if(km < 70000) value *= 1;
+else if(km < 100000) value *= 0.95;
+else value *= 0.90;
+
+/* price range */
+
+let minPrice = Math.round(value * 0.95);
+let maxPrice = Math.round(value * 1.05);
+
+document.getElementById("result").innerHTML =
+"Estimated Used Car Price Range: ₹" + minPrice + " – ₹" + maxPrice;
+
+}
