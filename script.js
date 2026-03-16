@@ -53,7 +53,7 @@ return;
 
 let age = new Date().getFullYear() - year;
 
-let value = car.basePrice * Math.pow((1 - car.depreciation), age);
+let value = calculateDepreciatedValue(car.basePrice, age);
 
 /* SUV demand adjustment */
 
