@@ -1,89 +1,9 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-<title>Used Car Price Calculator</title>
-
-<style>
-
-body{
-font-family:Arial;
-background:#f4f4f4;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-margin:0;
-}
-
-.container{
-background:white;
-padding:30px;
-border-radius:10px;
-width:380px;
-box-shadow:0 0 10px rgba(0,0,0,0.15);
-text-align:center;
-}
-
-select,input{
-width:100%;
-padding:10px;
-margin-top:12px;
-font-size:16px;
-}
-
-button{
-width:100%;
-padding:12px;
-margin-top:15px;
-background:#2e7d32;
-color:white;
-border:none;
-font-size:18px;
-border-radius:5px;
-cursor:pointer;
-}
-
-#result{
-margin-top:20px;
-font-size:18px;
-font-weight:bold;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<h2>Used Car Price Calculator</h2>
-
-<select id="brand">
-<option>Select Brand</option>
-</select>
-
-<select id="model">
-<option>Select Model</option>
-</select>
-
-<input id="year" placeholder="Manufacturing Year">
-
-<input id="kms" placeholder="Kilometers Driven">
-
-<button onclick="calculateValue()">Check Price</button>
-
-<div id="result"></div>
-
-</div>
-
 <script>
 
 let cars=[];
 
-/* LOAD DATA */
+
+/* LOAD DATASET */
 
 async function loadCars(){
 
@@ -92,6 +12,10 @@ try{
 const response=await fetch("cars.json");
 
 cars=await response.json();
+
+/* remove bad rows */
+
+cars=cars.filter(c=>c.brand && c.model && c.onroad);
 
 populateBrands();
 
@@ -107,11 +31,13 @@ console.log("Dataset failed to load");
 window.onload=loadCars;
 
 
-/* LOAD BRANDS */
+/* BRAND DROPDOWN */
 
 function populateBrands(){
 
-let brandDropdown=document.getElementById("brand");
+let dropdown=document.getElementById("brand");
+
+dropdown.innerHTML="<option>Select Brand</option>";
 
 let brands=[...new Set(cars.map(c=>c.brand))];
 
@@ -122,55 +48,113 @@ brands.forEach(b=>{
 let option=document.createElement("option");
 
 option.value=b;
-
 option.text=b;
 
-brandDropdown.appendChild(option);
+dropdown.appendChild(option);
 
 });
 
-brandDropdown.addEventListener("change",populateModels);
+dropdown.addEventListener("change",populateModels);
 
 }
 
 
-/* LOAD MODELS */
+/* MODEL DROPDOWN */
 
 function populateModels(){
 
 let brand=document.getElementById("brand").value;
 
-let modelDropdown=document.getElementById("model");
+let dropdown=document.getElementById("model");
 
-modelDropdown.innerHTML="<option>Select Model</option>";
+dropdown.innerHTML="<option>Select Model</option>";
 
 let models=cars.filter(c=>c.brand===brand);
 
-models.forEach(car=>{
+let unique=[...new Set(models.map(c=>c.model))];
+
+unique.sort();
+
+unique.forEach(m=>{
 
 let option=document.createElement("option");
 
-option.value=car.model;
+option.value=m;
+option.text=m;
 
-option.text=car.model;
-
-modelDropdown.appendChild(option);
+dropdown.appendChild(option);
 
 });
 
 }
 
 
-/* SIMPLE PRICE CALC */
+/* DEPRECIATION CURVE */
+
+function depreciation(price,age){
+
+let value=price;
+
+for(let i=1;i<=age;i++){
+
+if(i==1) value*=0.82;
+else if(i==2) value*=0.88;
+else if(i==3) value*=0.90;
+else if(i==4) value*=0.92;
+else if(i==5) value*=0.93;
+else value*=0.95;
+
+}
+
+return value;
+
+}
+
+
+/* BRAND RESALE FACTOR */
+
+function brandFactor(brand){
+
+brand=brand.toLowerCase();
+
+if(brand.includes("toyota")) return 1.06;
+if(brand.includes("maruti")) return 1.05;
+if(brand.includes("hyundai")) return 1.04;
+if(brand.includes("honda")) return 1.03;
+if(brand.includes("tata")) return 1.02;
+if(brand.includes("mahindra")) return 1.02;
+if(brand.includes("volkswagen")) return 0.97;
+if(brand.includes("skoda")) return 0.96;
+if(brand.includes("renault")) return 0.95;
+if(brand.includes("nissan")) return 0.94;
+
+return 1;
+
+}
+
+
+/* KM ADJUSTMENT */
+
+function kmFactor(km){
+
+if(km < 20000) return 1.03;
+else if(km < 40000) return 1;
+else if(km < 60000) return 0.97;
+else if(km < 80000) return 0.94;
+else if(km < 100000) return 0.90;
+else if(km < 130000) return 0.85;
+else return 0.80;
+
+}
+
+
+/* CALCULATOR */
 
 function calculateValue(){
 
 let brand=document.getElementById("brand").value;
-
 let model=document.getElementById("model").value;
-
 let year=document.getElementById("year").value;
-
 let km=document.getElementById("kms").value;
 
 let car=cars.find(c=>c.brand===brand && c.model===model);
@@ -178,27 +162,56 @@ let car=cars.find(c=>c.brand===brand && c.model===model);
 if(!car){
 
 document.getElementById("result").innerHTML="Car not found";
-
 return;
 
 }
 
 let age=new Date().getFullYear()-year;
 
-let value=car.onroad*Math.pow(0.9,age);
 
-if(km>80000) value*=0.9;
+/* base depreciation */
+
+let value=depreciation(car.onroad,age);
+
+
+/* body demand */
+
+value*=car.bodyfactor || 1;
+
+
+/* fuel demand */
+
+value*=car.fuelfactor || 1;
+
+
+/* transmission demand */
+
+value*=car.transfactor || 1;
+
+
+/* owner factor */
+
+value*=car.ownerfactor || 1;
+
+
+/* brand strength */
+
+value*=brandFactor(car.brand);
+
+
+/* KM impact */
+
+value*=kmFactor(km);
+
+
+/* final price range */
 
 let min=Math.round(value*0.95);
-
 let max=Math.round(value*1.05);
 
-document.getElementById("result").innerHTML="₹"+min+" - ₹"+max;
+document.getElementById("result").innerHTML=
+"Estimated Used Car Price: ₹"+min+" – ₹"+max;
 
 }
 
 </script>
-
-</body>
-
-</html>
