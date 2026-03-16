@@ -1,10 +1,97 @@
-let carDatabase=[];
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Used Car Price Calculator</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:380px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+select,input{
+width:100%;
+padding:10px;
+margin-top:12px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#2e7d32;
+color:white;
+border:none;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+#result{
+margin-top:20px;
+font-size:18px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Check Used Car Price</h2>
+
+<select id="brand" onchange="populateModels()">
+<option>Select Brand</option>
+</select>
+
+<select id="model">
+<option>Select Model</option>
+</select>
+
+<input id="year" placeholder="Manufacturing Year">
+
+<input id="kms" placeholder="Kilometers Driven">
+
+<button onclick="calculateValue()">Check Price</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+let cars=[];
+
+
+/* LOAD DATASET */
 
 async function loadCars(){
 
 const response=await fetch("cars.json");
 
-carDatabase=await response.json();
+cars=await response.json();
 
 populateBrands();
 
@@ -12,25 +99,35 @@ populateBrands();
 
 window.onload=loadCars;
 
+
+
+/* BRAND DROPDOWN */
+
 function populateBrands(){
 
-let brandDropdown=document.getElementById("brand");
+let dropdown=document.getElementById("brand");
 
-let brands=[...new Set(carDatabase.map(c=>c.brand))];
+let brands=[...new Set(cars.map(c=>c.brand))];
+
+brands.sort();
 
 brands.forEach(b=>{
 
-let opt=document.createElement("option");
+let option=document.createElement("option");
 
-opt.value=b;
+option.value=b;
 
-opt.text=b;
+option.text=b;
 
-brandDropdown.appendChild(opt);
+dropdown.appendChild(option);
 
 });
 
 }
+
+
+
+/* MODEL DROPDOWN */
 
 function populateModels(){
 
@@ -40,35 +137,38 @@ let dropdown=document.getElementById("model");
 
 dropdown.innerHTML="<option>Select Model</option>";
 
-let models=carDatabase.filter(c=>c.brand==brand);
+let models=cars.filter(c=>c.brand===brand);
 
 let unique=[...new Set(models.map(c=>c.model))];
 
+unique.sort();
+
 unique.forEach(m=>{
 
-let opt=document.createElement("option");
+let option=document.createElement("option");
 
-opt.value=m;
+option.value=m;
 
-opt.text=m;
+option.text=m;
 
-dropdown.appendChild(opt);
+dropdown.appendChild(option);
 
 });
 
 }
 
+
+
+/* VALUATION ENGINE */
+
 function calculateValue(){
 
 let brand=document.getElementById("brand").value;
-
 let model=document.getElementById("model").value;
-
 let year=document.getElementById("year").value;
-
 let km=document.getElementById("kms").value;
 
-let car=carDatabase.find(c=>c.brand==brand && c.model==model);
+let car=cars.find(c=>c.brand===brand && c.model===model);
 
 if(!car){
 
@@ -95,3 +195,9 @@ let max=Math.round(value*1.05);
 document.getElementById("result").innerHTML="₹"+min+" - ₹"+max;
 
 }
+
+</script>
+
+</body>
+
+</html>
