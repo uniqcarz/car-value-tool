@@ -3,28 +3,33 @@ let carDatabase = [];
 async function loadCarData(){
 
 const response = await fetch("data/car_data.csv");
-const data = await response.text();
+const text = await response.text();
 
-const rows = data.split("\n").slice(1);
+const rows = text.split("\n");
 
 rows.forEach(row => {
 
+if(!row.trim()) return; // skip empty rows
+
 const cols = row.split(",");
+
+if(cols.length < 6) return; // skip broken rows
 
 carDatabase.push({
 brand: cols[0].trim().toLowerCase(),
 model: cols[1].trim().toLowerCase(),
-segment: cols[2].trim(), 
+segment: cols[2].trim().toLowerCase(),
 basePrice: parseInt(cols[4]),
 depreciation: parseFloat(cols[5])
 });
 
 });
 
+console.log("Cars loaded:", carDatabase.length);
+
 }
 
-loadCarData();
-
+window.onload = loadCarData;
 
 function calculateValue(){
 
@@ -50,25 +55,24 @@ let age = new Date().getFullYear() - year;
 
 let value = car.basePrice * Math.pow((1 - car.depreciation), age);
 
-
 /* SUV demand adjustment */
 
-if(car.segment.toLowerCase().includes("suv"))
+if(car.segment.includes("suv")){
 value = value * 1.08;
+}
 
+/* KM adjustment */
 
-/* km adjustment */
+if(km < 20000) value = value * 1.05;
+else if(km < 40000) value = value * 1.02;
+else if(km < 70000) value = value * 1;
+else if(km < 100000) value = value * 0.95;
+else value = value * 0.90;
 
-if(km < 20000) value *= 1.05;
-else if(km < 40000) value *= 1.02;
-else if(km < 70000) value *= 1;
-else if(km < 100000) value *= 0.95;
-else value *= 0.90;
-
+/* Price range */
 
 let minPrice = Math.round(value * 0.95);
 let maxPrice = Math.round(value * 1.05);
-
 
 document.getElementById("result").innerHTML =
 "Estimated Used Car Price Range: ₹" + minPrice + " – ₹" + maxPrice;
