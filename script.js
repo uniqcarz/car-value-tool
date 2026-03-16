@@ -48,6 +48,8 @@ let age = new Date().getFullYear() - year;
 
 let value = car.basePrice * Math.pow((1 - car.depreciation), age);
 
+if(car.segment.includes("SUV")) value *= 1.08;
+
 /* km adjustment */
 
 if(km < 20000) value *= 1.05;
