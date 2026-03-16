@@ -40,4 +40,50 @@ let maxPrice = Math.round(value * 1.05);
 document.getElementById("result").innerHTML =
 "Estimated Used Car Price Range: ₹" + minPrice + " – ₹" + maxPrice;
 
+  async function loadCarData() {
+
+const response = await fetch("data/car_data.csv");
+const data = await response.text();
+
+const rows = data.split("\n").slice(1);
+
+let cars = [];
+
+rows.forEach(row => {
+
+const cols = row.split(",");
+
+cars.push({
+brand: cols[0],
+model: cols[1],
+segment: cols[2],
+fuel: cols[3],
+basePrice: parseInt(cols[4]),
+depreciation: parseFloat(cols[5])
+});
+
+});
+
+return cars;
+
+}
+
+  function calculateValue(basePrice, depreciation, year, km){
+
+let age = new Date().getFullYear() - year;
+
+let value = basePrice * Math.pow((1 - depreciation), age);
+
+/* km adjustment */
+
+if(km < 20000) value *= 1.05;
+else if(km < 40000) value *= 1.02;
+else if(km < 70000) value *= 1;
+else if(km < 100000) value *= 0.95;
+else value *= 0.90;
+
+return Math.round(value);
+
+}
+  
 }
