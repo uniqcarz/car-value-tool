@@ -20,7 +20,30 @@
 
 <label>Kilometers Driven</label> <input type="number" id="kms" placeholder="Example: 45000">
 
-<label>Original Price (₹)</label> <input type="number" id="price" placeholder="Example: 850000">
+<input type="text" id="model" placeholder="Car Model (Example: Creta)">
+
+  <select id="brand">
+<option>Maruti Suzuki</option>
+<option>Hyundai</option>
+<option>Tata</option>
+<option>Mahindra</option>
+<option>Toyota</option>
+<option>Kia</option>
+<option>Honda</option>
+<option>MG</option>
+<option>Renault</option>
+<option>Nissan</option>
+</select>
+
+<input type="text" id="model" placeholder="Car Model">
+
+<input type="number" id="year" placeholder="Manufacturing Year">
+
+<input type="number" id="kms" placeholder="Kilometers Driven">
+
+  <button onclick="calculateValue()">Check Value</button>
+
+  <div id="result"></div>
 
 
   <h2>Popular Used Car Prices</h2>
