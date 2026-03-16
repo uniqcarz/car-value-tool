@@ -31,6 +31,46 @@ console.log("Cars loaded:", carDatabase.length);
 
 window.onload = loadCarData;
 
+function calculateDepreciatedValue(basePrice, age);
+
+/* brand resale adjustment */
+
+let brandFactor = 1;
+
+if(car.brand.includes("maruti")) brandFactor = 1.07;
+else if(car.brand.includes("toyota")) brandFactor = 1.07;
+else if(car.brand.includes("hyundai")) brandFactor = 1.05;
+else if(car.brand.includes("honda")) brandFactor = 1.03;
+else if(car.brand.includes("tata")) brandFactor = 1.02;
+else if(car.brand.includes("mahindra")) brandFactor = 1.02;
+else if(car.brand.includes("volkswagen")) brandFactor = 0.96;
+else if(car.brand.includes("skoda")) brandFactor = 0.95;
+else if(car.brand.includes("renault")) brandFactor = 0.94;
+else if(car.brand.includes("nissan")) brandFactor = 0.93;
+
+value = value * brandFactor;
+
+
+{
+
+let value = basePrice;
+
+for(let i=1;i<=age;i++){
+
+if(i==1) value *= 0.85;
+else if(i==2) value *= 0.88;
+else if(i==3) value *= 0.90;
+else if(i==4) value *= 0.92;
+else if(i==5) value *= 0.94;
+else value *= 0.95;
+
+}
+
+return value;
+
+}
+
+
 function calculateValue(){
 
 let brand = document.getElementById("brand").value.toLowerCase();
