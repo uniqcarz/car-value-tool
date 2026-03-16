@@ -172,6 +172,36 @@ let age = new Date().getFullYear() - year;
 let value = calculateDepreciatedValue(car.basePrice, age);
 
 
+function populateModels(){
+
+if(carDatabase.length === 0){
+console.log("Database not loaded yet");
+return;
+}
+
+let brand = document.getElementById("brand").value.toLowerCase();
+let modelDropdown = document.getElementById("model");
+
+modelDropdown.innerHTML = "<option value=''>Select Model</option>";
+
+let filteredCars = carDatabase.filter(car =>
+car.brand.includes(brand)
+);
+
+filteredCars.forEach(car => {
+
+let option = document.createElement("option");
+
+option.value = car.model;
+option.text = car.model;
+
+modelDropdown.appendChild(option);
+
+});
+
+}
+
+
 /* SUV demand adjustment */
 
 let segment = car.segment;
