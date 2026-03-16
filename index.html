@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
-<title>Car Price Tool</title>
+<title>Used Car Price Tool</title>
 </head>
 
 <body>
@@ -20,7 +19,7 @@
 <br><br>
 
 <select id="model">
-<option value="">Select Model</option>
+<option>Select Model</option>
 </select>
 
 <br><br>
@@ -29,7 +28,7 @@
 
 <br><br>
 
-<input id="kms" placeholder="KM">
+<input id="kms" placeholder="KM Driven">
 
 <br><br>
 
@@ -39,7 +38,7 @@
 
 <script>
 
-let cars = [
+let cars=[
 
 {brand:"hyundai",model:"creta",price:1079000,segment:"suv"},
 {brand:"hyundai",model:"i20",price:699000,segment:"hatchback"},
@@ -53,9 +52,9 @@ let cars = [
 
 function populateModels(){
 
-let brand = document.getElementById("brand").value.toLowerCase();
+let brand=document.getElementById("brand").value.toLowerCase();
 
-let dropdown = document.getElementById("model");
+let dropdown=document.getElementById("model");
 
 dropdown.innerHTML="<option>Select Model</option>";
 
