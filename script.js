@@ -54,7 +54,7 @@ let value = car.basePrice * Math.pow((1 - car.depreciation), age);
 /* SUV demand adjustment */
 
 if(car.segment.toLowerCase().includes("suv"))
-value *= 1.08;
+value = value * 1.08;
 
 
 /* km adjustment */
