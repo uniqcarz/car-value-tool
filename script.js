@@ -1,5 +1,7 @@
 let carDatabase = [];
 
+/* LOAD CSV DATA */
+
 async function loadCarData(){
 
 const response = await fetch("data/car_data.csv");
@@ -27,33 +29,45 @@ depreciation: parseFloat(cols[5])
 
 console.log("Cars loaded:", carDatabase.length);
 
-populateModels();
-
 }
 
 window.onload = loadCarData;
 
-function calculateDepreciatedValue(basePrice, age);
 
-/* brand resale adjustment */
+/* POPULATE MODEL DROPDOWN */
 
-let brandFactor = 1;
+function populateModels(){
 
-if(car.brand.includes("maruti")) brandFactor = 1.07;
-else if(car.brand.includes("toyota")) brandFactor = 1.07;
-else if(car.brand.includes("hyundai")) brandFactor = 1.05;
-else if(car.brand.includes("honda")) brandFactor = 1.03;
-else if(car.brand.includes("tata")) brandFactor = 1.02;
-else if(car.brand.includes("mahindra")) brandFactor = 1.02;
-else if(car.brand.includes("volkswagen")) brandFactor = 0.96;
-else if(car.brand.includes("skoda")) brandFactor = 0.95;
-else if(car.brand.includes("renault")) brandFactor = 0.94;
-else if(car.brand.includes("nissan")) brandFactor = 0.93;
+let brand = document.getElementById("brand").value.toLowerCase();
+let modelDropdown = document.getElementById("model");
 
-value = value * brandFactor;
+modelDropdown.innerHTML = "<option value=''>Select Model</option>";
+
+let models = carDatabase.filter(car =>
+car.brand.includes(brand)
+);
+
+/* remove duplicates */
+
+let uniqueModels = [...new Set(models.map(car => car.model))];
+
+uniqueModels.forEach(model => {
+
+let option = document.createElement("option");
+
+option.value = model;
+option.text = model;
+
+modelDropdown.appendChild(option);
+
+});
+
+}
 
 
-{
+/* DEPRECIATION CURVE */
+
+function calculateDepreciatedValue(basePrice, age){
 
 let value = basePrice;
 
@@ -72,6 +86,8 @@ return value;
 
 }
 
+
+/* MAIN CALCULATOR */
 
 function calculateValue(){
 
@@ -93,55 +109,45 @@ return;
 
 }
 
-function populateModels(){
-
-let brand = document.getElementById("brand").value.toLowerCase();
-let modelDropdown = document.getElementById("model");
-
-modelDropdown.innerHTML = "<option value=''>Select Model</option>";
-
-let filteredCars = carDatabase.filter(car =>
-car.brand.includes(brand)
-);
-
-filteredCars.forEach(car => {
-
-let option = document.createElement("option");
-
-option.value = car.model;
-option.text = car.model;
-
-modelDropdown.appendChild(option);
-
-});
-
-}
-
-
 let age = new Date().getFullYear() - year;
 
 let value = calculateDepreciatedValue(car.basePrice, age);
 
-/* SUV demand adjustment */
 
-let segment = car.segment.toLowerCase();
+/* BRAND RESALE ADJUSTMENT */
 
-if(
-segment.includes("suv") ||
-segment.includes("utility")
-){
-value = value * 1.08;
-}
+let brandFactor = 1;
 
-/* KM adjustment */
+if(car.brand.includes("maruti")) brandFactor = 1.07;
+else if(car.brand.includes("toyota")) brandFactor = 1.07;
+else if(car.brand.includes("hyundai")) brandFactor = 1.05;
+else if(car.brand.includes("honda")) brandFactor = 1.03;
+else if(car.brand.includes("tata")) brandFactor = 1.02;
+else if(car.brand.includes("mahindra")) brandFactor = 1.02;
+else if(car.brand.includes("volkswagen")) brandFactor = 0.96;
+else if(car.brand.includes("skoda")) brandFactor = 0.95;
+else if(car.brand.includes("renault")) brandFactor = 0.94;
+else if(car.brand.includes("nissan")) brandFactor = 0.93;
 
-if(km < 20000) value = value * 1.05;
-else if(km < 40000) value = value * 1.02;
-else if(km < 70000) value = value * 1;
-else if(km < 100000) value = value * 0.95;
-else value = value * 0.90;
+value *= brandFactor;
 
-/* price range */
+
+/* SUV DEMAND ADJUSTMENT */
+
+if(car.segment.includes("suv"))
+value *= 1.08;
+
+
+/* KM ADJUSTMENT */
+
+if(km < 20000) value *= 1.05;
+else if(km < 40000) value *= 1.02;
+else if(km < 70000) value *= 1;
+else if(km < 100000) value *= 0.95;
+else value *= 0.90;
+
+
+/* FINAL PRICE RANGE */
 
 let minPrice = Math.round(value * 0.95);
 let maxPrice = Math.round(value * 1.05);
