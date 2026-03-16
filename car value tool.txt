@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Used Car Value Calculator</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+padding:40px;
+}
+
+.container{
+background:white;
+padding:30px;
+max-width:500px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input,select{
+width:90%;
+padding:10px;
+margin:10px;
+font-size:16px;
+}
+
+button{
+padding:12px 20px;
+background:#007BFF;
+color:white;
+border:none;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Used Car Value Calculator</h2>
+
+<input type="number" id="price" placeholder="Original Car Price (₹)">
+
+<input type="number" id="year" placeholder="Manufacturing Year">
+
+<input type="number" id="km" placeholder="Kilometers Driven">
+
+<select id="condition">
+<option value="excellent">Excellent</option>
+<option value="good">Good</option>
+<option value="fair">Fair</option>
+</select>
+
+<button onclick="calculate()">Calculate Value</button>
+
+<div class="result" id="result"></div>
+
+</div>
+
+<script>
+
+function calculate(){
+
+let price = document.getElementById("price").value;
+let year = document.getElementById("year").value;
+let km = document.getElementById("km").value;
+let condition = document.getElementById("condition").value;
+
+let currentYear = new Date().getFullYear();
+let age = currentYear - year;
+
+let value = price;
+
+/* depreciation */
+
+let depreciationRates = [0.15,0.10,0.10,0.10,0.05];
+
+for(let i=0;i<age;i++){
+
+if(i < depreciationRates.length)
+value = value * (1 - depreciationRates[i]);
+
+else
+value = value * 0.95;
+
+}
+
+/* km adjustment */
+
+if(km < 20000) value *= 1.05;
+else if(km < 40000) value *= 1.02;
+else if(km < 70000) value *= 1;
+else if(km < 100000) value *= 0.95;
+else value *= 0.90;
+
+/* condition */
+
+if(condition == "excellent") value *= 1.03;
+if(condition == "fair") value *= 0.95;
+
+value = Math.round(value);
+
+document.getElementById("result").innerHTML =
+"Estimated Car Value: ₹ " + value.toLocaleString();
+
+}
+
+</script>
+
+</body>
+</html>
