@@ -6,7 +6,6 @@
 <title>Used Car Price Calculator</title>
 
 <style>
-
 body{
 font-family:Arial;
 background:#f4f4f4;
@@ -50,7 +49,6 @@ margin-top:20px;
 font-size:18px;
 font-weight:bold;
 }
-
 </style>
 
 </head>
@@ -69,8 +67,16 @@ font-weight:bold;
 <option>Select Model</option>
 </select>
 
-<select id="variant">
+<select id="variant" onchange="setCarDetails()">
 <option>Select Variant</option>
+</select>
+
+<select id="fuel">
+<option>Select Fuel</option>
+</select>
+
+<select id="transmission">
+<option>Select Transmission</option>
 </select>
 
 <select id="owners">
@@ -92,39 +98,39 @@ font-weight:bold;
 
 <script>
 
-let cars=[];
+let cars = [];
+let selectedCar = null;
 
 
 /* LOAD DATASET */
 
-document.addEventListener("DOMContentLoaded",loadCars);
+document.addEventListener("DOMContentLoaded", loadCars);
 
 async function loadCars(){
 
-const response=await fetch("cars.json");
-cars=await response.json();
+const response = await fetch("cars.json");
+cars = await response.json();
 
 populateBrands();
 
 }
 
 
-/* BRAND DROPDOWN */
+/* BRAND */
 
 function populateBrands(){
 
-let dropdown=document.getElementById("brand");
-
-let brands=[...new Set(cars.map(c=>c.brand))];
+let brands = [...new Set(cars.map(c => c.brand))];
 
 brands.sort();
 
-brands.forEach(b=>{
+let dropdown = document.getElementById("brand");
 
-let option=document.createElement("option");
+brands.forEach(b => {
 
-option.value=b;
-option.text=b;
+let option = document.createElement("option");
+option.value = b;
+option.text = b;
 
 dropdown.appendChild(option);
 
@@ -133,26 +139,24 @@ dropdown.appendChild(option);
 }
 
 
-/* MODEL DROPDOWN */
+/* MODEL */
 
 function populateModels(){
 
-let brand=document.getElementById("brand").value;
+let brand = document.getElementById("brand").value;
 
-let dropdown=document.getElementById("model");
+let dropdown = document.getElementById("model");
+dropdown.innerHTML = "<option>Select Model</option>";
 
-dropdown.innerHTML="<option>Select Model</option>";
+let models = cars.filter(c => c.brand === brand);
 
-let models=cars.filter(c=>c.brand===brand);
+let unique = [...new Set(models.map(c => c.model))];
 
-let unique=[...new Set(models.map(c=>c.model))];
+unique.forEach(m => {
 
-unique.forEach(m=>{
-
-let option=document.createElement("option");
-
-option.value=m;
-option.text=m;
+let option = document.createElement("option");
+option.value = m;
+option.text = m;
 
 dropdown.appendChild(option);
 
@@ -161,38 +165,54 @@ dropdown.appendChild(option);
 }
 
 
-/* VARIANT DROPDOWN */
+/* VARIANT */
 
 function populateVariants(){
 
-let brand=document.getElementById("brand").value;
-let model=document.getElementById("model").value;
+let brand = document.getElementById("brand").value;
+let model = document.getElementById("model").value;
 
-let dropdown=document.getElementById("variant");
+let dropdown = document.getElementById("variant");
+dropdown.innerHTML = "<option>Select Variant</option>";
 
-dropdown.innerHTML="<option>Select Variant</option>";
+let filtered = cars.filter(c => c.brand === brand && c.model === model);
 
-let variants=cars.filter(c=>c.brand===brand && c.model===model);
+filtered.forEach(car => {
 
-variants.forEach(v=>{
+let option = document.createElement("option");
 
-let option=document.createElement("option");
-
-option.value=v.price;
-option.text=v.variant+" (₹"+v.price+")";
+option.value = JSON.stringify(car);
+option.text = car.variant + " (₹" + car.onroad + ")";
 
 dropdown.appendChild(option);
 
 });
+
+}
+
+
+/* SET DETAILS */
+
+function setCarDetails(){
+
+selectedCar = JSON.parse(document.getElementById("variant").value);
+
+/* fuel dropdown */
+let fuelDropdown = document.getElementById("fuel");
+fuelDropdown.innerHTML = "<option>" + selectedCar.fuel + "</option>";
+
+/* transmission dropdown */
+let transDropdown = document.getElementById("transmission");
+transDropdown.innerHTML = "<option>" + selectedCar.transmission + "</option>";
 
 }
 
 
 /* DEPRECIATION */
 
-function depreciation(price,age){
+function depreciation(price, age){
 
-let value=price;
+let value = price;
 
 for(let i=1;i<=age;i++){
 
@@ -230,35 +250,42 @@ return 0.80;
 
 function calculateValue(){
 
-let price=document.getElementById("variant").value;
+if(!selectedCar){
 
-let year=document.getElementById("year").value;
-
-let km=document.getElementById("kms").value;
-
-let owners=document.getElementById("owners").value;
-
-if(!price){
-
-document.getElementById("result").innerHTML="Select variant";
+document.getElementById("result").innerHTML="Select a variant";
 return;
 
 }
 
-let age=new Date().getFullYear()-year;
+let year = document.getElementById("year").value;
+let km = document.getElementById("kms").value;
+let owners = document.getElementById("owners").value;
 
-let value=depreciation(price,age);
+let age = new Date().getFullYear() - year;
 
-value*=kmFactor(km);
 
-value*=owners;
+/* NEW LOGIC */
 
-let min=Math.round(value*0.95);
-let max=Math.round(value*1.05);
+let depValue = depreciation(selectedCar.ex_showroom, age);
 
-document.getElementById("result").innerHTML=
+let marketValue = selectedCar.onroad * Math.pow(0.85, age);
 
-"Estimated Used Price: ₹"+min+" – ₹"+max;
+let value = (depValue + marketValue) / 2;
+
+
+/* adjustments */
+
+value *= kmFactor(km);
+value *= owners;
+
+
+/* result */
+
+let min = Math.round(value * 0.95);
+let max = Math.round(value * 1.05);
+
+document.getElementById("result").innerHTML =
+"Estimated Used Price: ₹" + min + " – ₹" + max;
 
 }
 
