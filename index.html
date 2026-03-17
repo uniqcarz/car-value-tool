@@ -94,6 +94,11 @@ font-weight:bold;
 
 <div id="result"></div>
 
+<button onclick="toggleDealer()">Show Dealer View</button>
+
+<div id="dealerBox" style="display:none; margin-top:15px;">
+<div id="dealerResult"></div>
+    
 </div>
 
 <script>
@@ -246,6 +251,18 @@ return 0.80;
 }
 
 
+function toggleDealer(){
+
+let box = document.getElementById("dealerBox");
+
+if(box.style.display === "none"){
+box.style.display = "block";
+}else{
+box.style.display = "none";
+}
+
+}
+
 /* CALCULATOR */
 
 function calculateValue(){
@@ -272,6 +289,22 @@ let marketValue = selectedCar.onroad * Math.pow(0.85, age);
 
 let value = (depValue + marketValue) / 2;
 
+/* DEALER CALCULATIONS */
+
+let marketPrice = value;
+
+/* dealer typically buys at 85–88% */
+
+let dealerBuy = marketPrice * 0.87;
+
+/* dealer listing slightly higher */
+
+let listingPrice = marketPrice * 1.05;
+
+/* margin */
+
+let margin = ((listingPrice - dealerBuy) / dealerBuy) * 100;
+
 
 /* adjustments */
 
@@ -285,7 +318,13 @@ let min = Math.round(value * 0.95);
 let max = Math.round(value * 1.05);
 
 document.getElementById("result").innerHTML =
-"Estimated Used Price: ₹" + min + " – ₹" + max;
+"Estimated Market Price: ₹" + min + " – ₹" + max;
+
+document.getElementById("dealerResult").innerHTML =
+
+"Dealer Buy Price: ₹" + Math.round(dealerBuy) +
+"<br>Listing Price: ₹" + Math.round(listingPrice) +
+"<br>Margin: " + margin.toFixed(1) + "%";
 
 }
 
