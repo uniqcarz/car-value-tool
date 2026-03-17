@@ -21,7 +21,7 @@ margin:0;
 background:white;
 padding:30px;
 border-radius:10px;
-width:400px;
+width:420px;
 box-shadow:0 0 12px rgba(0,0,0,0.15);
 text-align:center;
 }
@@ -62,18 +62,15 @@ font-weight:bold;
 <h2>Used Car Price Calculator</h2>
 
 <select id="brand" onchange="populateModels()">
-<option value="">Select Brand</option>
+<option>Select Brand</option>
 </select>
 
-<select id="model">
-<option value="">Select Model</option>
+<select id="model" onchange="populateVariants()">
+<option>Select Model</option>
 </select>
 
-<select id="fuel">
-<option value="1">Petrol</option>
-<option value="1.03">Diesel</option>
-<option value="1.05">Hybrid</option>
-<option value="0.95">CNG</option>
+<select id="variant">
+<option>Select Variant</option>
 </select>
 
 <select id="owners">
@@ -82,8 +79,6 @@ font-weight:bold;
 <option value="0.85">3rd Owner</option>
 <option value="0.75">4th Owner</option>
 </select>
-
-<input id="price" type="number" placeholder="Original On-Road Price">
 
 <input id="year" type="number" placeholder="Manufacturing Year">
 
@@ -97,78 +92,103 @@ font-weight:bold;
 
 <script>
 
-/* BRAND → MODEL DATABASE */
-
-const carData = {
-
-"Maruti Suzuki": ["Swift","Baleno","WagonR","Brezza","Fronx","Dzire"],
-
-"Hyundai": ["i20","Creta","Venue","Verna","Exter"],
-
-"Tata": ["Tiago","Altroz","Punch","Nexon","Harrier"],
-
-"Mahindra": ["Thar","XUV300","XUV700","Scorpio"],
-
-"Toyota": ["Glanza","Hyryder","Fortuner","Innova"],
-
-"Kia": ["Sonet","Seltos","Carens"],
-
-"Honda": ["Amaze","City","Elevate"],
-
-"Renault": ["Kiger","Triber","Kwid"],
-
-"Nissan": ["Magnite"]
-
-};
+let cars=[];
 
 
-/* LOAD BRANDS */
+/* LOAD DATASET */
 
-window.onload=function(){
+document.addEventListener("DOMContentLoaded",loadCars);
 
-const brandDropdown=document.getElementById("brand");
+async function loadCars(){
 
-Object.keys(carData).forEach(brand=>{
+const response=await fetch("cars.json");
+cars=await response.json();
+
+populateBrands();
+
+}
+
+
+/* BRAND DROPDOWN */
+
+function populateBrands(){
+
+let dropdown=document.getElementById("brand");
+
+let brands=[...new Set(cars.map(c=>c.brand))];
+
+brands.sort();
+
+brands.forEach(b=>{
 
 let option=document.createElement("option");
 
-option.value=brand;
-option.text=brand;
+option.value=b;
+option.text=b;
 
-brandDropdown.appendChild(option);
-
-});
-
-};
-
-
-/* MODEL DROPDOWN */
-
-function populateModels(){
-
-const brand=document.getElementById("brand").value;
-
-const modelDropdown=document.getElementById("model");
-
-modelDropdown.innerHTML="<option>Select Model</option>";
-
-if(!carData[brand]) return;
-
-carData[brand].forEach(model=>{
-
-let option=document.createElement("option");
-
-option.value=model;
-option.text=model;
-
-modelDropdown.appendChild(option);
+dropdown.appendChild(option);
 
 });
 
 }
 
 
-/* DEPRECIATION CURVE */
+/* MODEL DROPDOWN */
+
+function populateModels(){
+
+let brand=document.getElementById("brand").value;
+
+let dropdown=document.getElementById("model");
+
+dropdown.innerHTML="<option>Select Model</option>";
+
+let models=cars.filter(c=>c.brand===brand);
+
+let unique=[...new Set(models.map(c=>c.model))];
+
+unique.forEach(m=>{
+
+let option=document.createElement("option");
+
+option.value=m;
+option.text=m;
+
+dropdown.appendChild(option);
+
+});
+
+}
+
+
+/* VARIANT DROPDOWN */
+
+function populateVariants(){
+
+let brand=document.getElementById("brand").value;
+let model=document.getElementById("model").value;
+
+let dropdown=document.getElementById("variant");
+
+dropdown.innerHTML="<option>Select Variant</option>";
+
+let variants=cars.filter(c=>c.brand===brand && c.model===model);
+
+variants.forEach(v=>{
+
+let option=document.createElement("option");
+
+option.value=v.price;
+option.text=v.variant+" (₹"+v.price+")";
+
+dropdown.appendChild(option);
+
+});
+
+}
+
+
+/* DEPRECIATION */
 
 function depreciation(price,age){
 
@@ -206,42 +226,21 @@ return 0.80;
 }
 
 
-/* BRAND RESALE */
-
-function brandFactor(brand){
-
-if(brand.includes("Toyota")) return 1.06;
-if(brand.includes("Maruti")) return 1.05;
-if(brand.includes("Hyundai")) return 1.04;
-if(brand.includes("Honda")) return 1.03;
-if(brand.includes("Tata")) return 1.02;
-if(brand.includes("Mahindra")) return 1.02;
-
-return 1;
-
-}
-
-
 /* CALCULATOR */
 
 function calculateValue(){
 
-let brand=document.getElementById("brand").value;
-
-let price=document.getElementById("price").value;
+let price=document.getElementById("variant").value;
 
 let year=document.getElementById("year").value;
 
 let km=document.getElementById("kms").value;
 
-let fuel=document.getElementById("fuel").value;
-
 let owners=document.getElementById("owners").value;
 
-if(!price || !year){
+if(!price){
 
-document.getElementById("result").innerHTML="Enter price and year";
-
+document.getElementById("result").innerHTML="Select variant";
 return;
 
 }
@@ -250,16 +249,11 @@ let age=new Date().getFullYear()-year;
 
 let value=depreciation(price,age);
 
-value*=brandFactor(brand);
-
-value*=fuel;
+value*=kmFactor(km);
 
 value*=owners;
 
-value*=kmFactor(km);
-
 let min=Math.round(value*0.95);
-
 let max=Math.round(value*1.05);
 
 document.getElementById("result").innerHTML=
