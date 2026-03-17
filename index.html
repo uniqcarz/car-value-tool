@@ -1,57 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Used Car Price Calculator</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:380px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+select,input{
+width:100%;
+padding:10px;
+margin-top:12px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#2e7d32;
+color:white;
+border:none;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+}
+
+#result{
+margin-top:20px;
+font-size:18px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Used Car Price Calculator</h2>
+
+<select id="brand">
+<option>Select Brand</option>
+</select>
+
+<select id="model">
+<option>Select Model</option>
+</select>
+
+<input id="year" type="number" placeholder="Manufacturing Year">
+
+<input id="kms" type="number" placeholder="Kilometers Driven">
+
+<button onclick="calculateValue()">Check Price</button>
+
+<div id="result"></div>
+
+</div>
+
 <script>
 
-let cars = [];
+let cars=[];
+
 
 /* LOAD DATASET */
 
+document.addEventListener("DOMContentLoaded", loadCars);
+
+
 async function loadCars(){
 
-try {
+try{
 
-const response = await fetch("cars.json");
-cars = await response.json();
+const response=await fetch("cars.json");
 
-/* remove broken rows */
+cars=await response.json();
 
-cars = cars.filter(c => c.brand && c.model && c.onroad);
+/* remove bad rows */
+
+cars=cars.filter(c=>c.brand && c.model && c.onroad);
 
 populateBrands();
 
-} catch(e){
+}
 
-console.log("Failed to load dataset", e);
+catch(err){
+
+console.log("Dataset failed to load",err);
 
 }
 
 }
-
-window.onload = loadCars;
 
 
 /* BRAND DROPDOWN */
 
 function populateBrands(){
 
-let brandDropdown = document.getElementById("brand");
+const dropdown=document.getElementById("brand");
 
-brandDropdown.innerHTML = "<option>Select Brand</option>";
+dropdown.innerHTML="<option>Select Brand</option>";
 
-let brands = [...new Set(cars.map(c => c.brand))];
+const brands=[...new Set(cars.map(c=>c.brand))];
 
 brands.sort();
 
-brands.forEach(b => {
+brands.forEach(b=>{
 
-let option = document.createElement("option");
+let option=document.createElement("option");
 
-option.value = b;
-option.text = b;
+option.value=b;
+option.text=b;
 
-brandDropdown.appendChild(option);
+dropdown.appendChild(option);
 
 });
 
-brandDropdown.addEventListener("change", populateModels);
+dropdown.addEventListener("change",populateModels);
 
 }
 
@@ -60,26 +146,26 @@ brandDropdown.addEventListener("change", populateModels);
 
 function populateModels(){
 
-let brand = document.getElementById("brand").value;
+const brand=document.getElementById("brand").value;
 
-let modelDropdown = document.getElementById("model");
+const dropdown=document.getElementById("model");
 
-modelDropdown.innerHTML = "<option>Select Model</option>";
+dropdown.innerHTML="<option>Select Model</option>";
 
-let models = cars.filter(c => c.brand === brand);
+const models=cars.filter(c=>c.brand===brand);
 
-let unique = [...new Set(models.map(c => c.model))];
+const unique=[...new Set(models.map(c=>c.model))];
 
 unique.sort();
 
-unique.forEach(m => {
+unique.forEach(m=>{
 
-let option = document.createElement("option");
+let option=document.createElement("option");
 
-option.value = m;
-option.text = m;
+option.value=m;
+option.text=m;
 
-modelDropdown.appendChild(option);
+dropdown.appendChild(option);
 
 });
 
@@ -88,18 +174,18 @@ modelDropdown.appendChild(option);
 
 /* DEPRECIATION CURVE */
 
-function depreciation(price, age){
+function depreciation(price,age){
 
-let value = price;
+let value=price;
 
-for(let i = 1; i <= age; i++){
+for(let i=1;i<=age;i++){
 
-if(i === 1) value *= 0.82;
-else if(i === 2) value *= 0.88;
-else if(i === 3) value *= 0.90;
-else if(i === 4) value *= 0.92;
-else if(i === 5) value *= 0.93;
-else value *= 0.95;
+if(i==1) value*=0.82;
+else if(i==2) value*=0.88;
+else if(i==3) value*=0.90;
+else if(i==4) value*=0.92;
+else if(i==5) value*=0.93;
+else value*=0.95;
 
 }
 
@@ -112,14 +198,14 @@ return value;
 
 function kmFactor(km){
 
-km = Number(km);
+km=Number(km);
 
-if(km < 20000) return 1.03;
-if(km < 40000) return 1;
-if(km < 60000) return 0.97;
-if(km < 80000) return 0.94;
-if(km < 100000) return 0.90;
-if(km < 130000) return 0.85;
+if(km<20000) return 1.03;
+if(km<40000) return 1;
+if(km<60000) return 0.97;
+if(km<80000) return 0.94;
+if(km<100000) return 0.90;
+if(km<130000) return 0.85;
 
 return 0.80;
 
@@ -130,7 +216,7 @@ return 0.80;
 
 function brandFactor(brand){
 
-brand = brand.toLowerCase();
+brand=brand.toLowerCase();
 
 if(brand.includes("toyota")) return 1.06;
 if(brand.includes("maruti")) return 1.05;
@@ -152,39 +238,58 @@ return 1;
 
 function calculateValue(){
 
-let brand = document.getElementById("brand").value;
-let model = document.getElementById("model").value;
-let year = document.getElementById("year").value;
-let km = document.getElementById("kms").value;
+const brand=document.getElementById("brand").value;
 
-let car = cars.find(c => c.brand === brand && c.model === model);
+const model=document.getElementById("model").value;
+
+const year=document.getElementById("year").value;
+
+const km=document.getElementById("kms").value;
+
+const car=cars.find(c=>c.brand===brand && c.model===model);
 
 if(!car){
 
-document.getElementById("result").innerHTML = "Car not found";
+document.getElementById("result").innerHTML="Car not found";
+
 return;
 
 }
 
-let age = new Date().getFullYear() - year;
+const age=new Date().getFullYear()-year;
 
-let value = depreciation(car.onroad, age);
+/* base depreciation */
 
-value *= (car.bodyfactor || 1);
-value *= (car.fuelfactor || 1);
-value *= (car.transfactor || 1);
-value *= (car.ownerfactor || 1);
+let value=depreciation(car.onroad,age);
 
-value *= brandFactor(car.brand);
+/* demand factors */
 
-value *= kmFactor(km);
+value*=car.bodyfactor||1;
+value*=car.fuelfactor||1;
+value*=car.transfactor||1;
+value*=car.ownerfactor||1;
 
-let min = Math.round(value * 0.95);
-let max = Math.round(value * 1.05);
+/* brand strength */
 
-document.getElementById("result").innerHTML =
-"Estimated Used Car Price: ₹" + min + " – ₹" + max;
+value*=brandFactor(car.brand);
+
+/* km adjustment */
+
+value*=kmFactor(km);
+
+/* final range */
+
+const min=Math.round(value*0.95);
+
+const max=Math.round(value*1.05);
+
+document.getElementById("result").innerHTML=
+"Estimated Used Car Price: ₹"+min+" – ₹"+max;
 
 }
 
 </script>
+
+</body>
+
+</html>
